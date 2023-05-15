@@ -1,13 +1,21 @@
-import { useState } from 'react'
 
+import { Routes, Route } from 'react-router-dom';
 import './App.scss'
 
-function App() {
-  const [count, setCount] = useState(0)
+import Home from './views/Home/Home';
+import Profile from './views/Profile/Profile';
+import Header from './components/UI/Header/Header';
+
+function App() { 
 
   return (
     <>
-      hello world
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/profile' element={<Profile />} />        
+      </Routes>  
+      
     </>
   )
 }
