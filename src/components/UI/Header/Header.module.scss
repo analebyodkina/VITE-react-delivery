@@ -1,17 +1,17 @@
 @import '../../../Scss/vars';
 @import '../../../Scss/mixins';
 
-.header {
-    display: flex;
-    align-items: center;
+.header {    
     padding: 15rem 0;
+    border-bottom: 1px solid $btn-bg;
+    &__container { 
+        display: flex;
+        align-items: center;      
+                        
+    }
     &__logo {
         max-width: 78rem;
-        margin-right: 49rem;
-    }
-
-    &__serch {       
-                        
+        margin-right: 48rem;
     }
 
     &__nav {
@@ -20,17 +20,24 @@
     }
 
     &__ul {
-        display: flex;
-        gap: 28rem;
-
+        display: flex;        
     }
 
-    &__li a{
-        @include text ($ff, 14rem, 20rem, 700, $color-titles);
-        letter-spacing: 0.1px;
+    &__li {
+        margin-right: 28rem;
+        a{
+            @include text ($ff, 14rem, 20rem, 700, $color-titles);
+            letter-spacing: 0.1px;
+        }
+        &:nth-child(2) {
+            margin-right: 28rem;
+        }
+        &:last-child {
+        padding-left: 20rem;
+        border-left: 1rem solid $btn-bg;
+        margin-right: 0;
+        }
     }
-    
-
     &__profile {
         max-width: 50rem;
         border-radius: $radius;
@@ -38,7 +45,10 @@
         margin-left: 16rem;
         cursor: pointer;
     }
-}
+    }
+    
+
+
 .headerBusket {
     max-width: 48rem;
     height: 48rem;

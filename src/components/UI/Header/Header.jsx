@@ -9,8 +9,8 @@ import style from "./Header.module.scss"
 
 const Header = () => {
     return ( 
-        <div className="container">
-            <header className={style.header}>
+        <header className={style.header}>
+            <div className={`container ${style.header__container}`}>
                 <a href="/" className={style.header__logo}>
                     <img src={Logo} alt="food delivery" />
                 </a>
@@ -25,15 +25,15 @@ const Header = () => {
                         <li className={style.header__li}><Link to={'/'}>Deals</Link></li>
                         <li className={style.header__li}><Link to={'/'}>My orders</Link></li>
                     </ul>
-                </nav>
-                
-                    <div className={style.headerBusket}>
-                        <BoxIcon />
-                        <div className={style.headerBusket__counter}>4</div>
-                    </div>
-                    <div className={style.header__profile}>
-                        <img src={Avatar} alt="avatar" />
-                    </div>
+                </nav>                
+                <div className={style.headerBusket}>
+                    <BoxIcon />
+                    <div className={style.headerBusket__counter}>4</div>
+                </div>
+                <div className={style.header__profile}>
+                    <img src={Avatar} alt="avatar" />
+                </div>
+            </div>
                     
                 
 
@@ -44,9 +44,9 @@ const Header = () => {
 
        
        
-            </header>
+        </header>
 
-        </div>
+        
         
     )
 }
