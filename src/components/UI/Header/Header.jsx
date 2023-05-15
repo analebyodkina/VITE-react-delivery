@@ -11,9 +11,9 @@ const Header = () => {
     return ( 
         <header className={style.header}>
             <div className={`container ${style.header__container}`}>
-                <a href="/" className={style.header__logo}>
+                <Link to={'/'} className={style.header__logo}>
                     <img src={Logo} alt="food delivery" />
-                </a>
+                </Link>
                 <div className={style.header__serch}>
                     <Input />
                 </div>
@@ -30,17 +30,14 @@ const Header = () => {
                     <BoxIcon />
                     <div className={style.headerBusket__counter}>4</div>
                 </div>
-                <div className={style.header__profile}>
+                <Link to={'/profile'} className={style.header__profile}>
                     <img src={Avatar} alt="avatar" />
-                </div>
+                </Link>
             </div>
                     
                 
 
-        {/* <Link to={'/'}>Home              
-       </Link> 
-       <Link to={'/profile'}>Profile              
-       </Link>  */}
+        
 
        
        

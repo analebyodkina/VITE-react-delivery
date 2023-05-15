@@ -6,23 +6,19 @@
     border-bottom: 1px solid $btn-bg;
     &__container { 
         display: flex;
-        align-items: center;      
-                        
+        align-items: center; 
     }
     &__logo {
         max-width: 78rem;
         margin-right: 48rem;
     }
-
     &__nav {
         margin-left: auto;
         margin-right: 24rem;
     }
-
     &__ul {
         display: flex;        
     }
-
     &__li {
         margin-right: 28rem;
         a{
@@ -40,15 +36,12 @@
     }
     &__profile {
         max-width: 50rem;
+        padding: 1rem;
         border-radius: $radius;
         border: 2px solid $btn-bg;
-        margin-left: 16rem;
-        cursor: pointer;
+        margin-left: 16rem;        
     }
-    }
-    
-
-
+} 
 .headerBusket {
     max-width: 48rem;
     height: 48rem;
@@ -56,11 +49,18 @@
     cursor: pointer;
     background: $bg-blue;
     border-radius: $radius;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    @include flex-center;
+    position: relative;
     &__counter {
+        position: absolute;
+        top: -4rem;
+        right: -4rem;
+        width: 20rem;
+        height: 20rem;
+        @include flex-center;
+        @include text ($ff, 10rem, 14rem, 700, $color-white);
+        background: $color-primary;
+        border-radius: 8px;
     }
 }
 
