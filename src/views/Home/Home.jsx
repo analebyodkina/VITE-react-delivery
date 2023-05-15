@@ -1,7 +1,9 @@
+import Sales from "../../components/Sales/Sales"
+
 const Home = () => {
   return ( 
       <>
-        <div>home works</div>
+        <Sales />
       </>
   )
 }

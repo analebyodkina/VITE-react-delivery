@@ -4,7 +4,7 @@
 .header {
     display: flex;
     align-items: center;
-    padding: 16rem 0;
+    padding: 15rem 0;
     &__logo {
         max-width: 78rem;
         margin-right: 49rem;
@@ -16,6 +16,7 @@
 
     &__nav {
         margin-left: auto;
+        margin-right: 24rem;
     }
 
     &__ul {
@@ -24,26 +25,25 @@
 
     }
 
-    &__li {
+    &__li a{
         @include text ($ff, 14rem, 20rem, 700, $color-titles);
         letter-spacing: 0.1px;
-
-    &__btn {
-        display: flex;
-        gap: 16rem;
     }
+    
 
     &__profile {
         max-width: 50rem;
         border-radius: $radius;
         border: 2px solid $btn-bg;
+        margin-left: 16rem;
+        cursor: pointer;
     }
 }
 .headerBusket {
     max-width: 48rem;
     height: 48rem;
     width: 100%;
-    
+    cursor: pointer;
     background: $bg-blue;
     border-radius: $radius;
     display: flex;
@@ -53,4 +53,4 @@
     &__counter {
     }
 }
-}
+

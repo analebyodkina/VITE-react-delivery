@@ -53,15 +53,14 @@ ul {
 button {
     padding: 0;
   }
-// .title {
-//     @include text($ff, 3.6rem, 4.9rem, 700, $color-text);    
-//     text-align: center;
-//     letter-spacing: -0.5px;
-//     @include mobile-576 { 
-//         @include text($ff, 2.8rem, 3.8rem, 700, $color-text);        
+.title {
+    @include text ($ff, 20rem, 28rem, 600, $color-titles);
+    letter-spacing: 0.1px;
+    // @include mobile-576 { 
+    //     @include text($ff, 2.8rem, 3.8rem, 700, $color-text);        
         
-//     }
-// }
+    // }
+}
 // .page2-title {
 //     @include text($ff, 1.6rem, 1.6rem, 700, $color-text);    
 //     letter-spacing: 1.5px;

@@ -5,9 +5,7 @@ const Input = () => {
     return ( 
        <label className="input">
         <input type="search" placeholder="Search" />
-            <span><SearchIcon /></span>        
-
-
+            <span><SearchIcon /></span> 
        </label>
     )
   }
