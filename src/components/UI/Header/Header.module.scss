@@ -1,28 +1,56 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
 .header {
     display: flex;
+    align-items: center;
+    padding: 16rem 0;
     &__logo {
+        max-width: 78rem;
+        margin-right: 49rem;
     }
 
-    &__serch {
+    &__serch {       
+                        
     }
 
     &__nav {
+        margin-left: auto;
     }
 
     &__ul {
+        display: flex;
+        gap: 28rem;
+
     }
 
     &__li {
-    }
+        @include text ($ff, 14rem, 20rem, 700, $color-titles);
+        letter-spacing: 0.1px;
 
     &__btn {
+        display: flex;
+        gap: 16rem;
     }
 
     &__profile {
+        max-width: 50rem;
+        border-radius: $radius;
+        border: 2px solid $btn-bg;
     }
 }
 .headerBusket {
-
+    max-width: 48rem;
+    height: 48rem;
+    width: 100%;
+    
+    background: $bg-blue;
+    border-radius: $radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     &__counter {
     }
+}
 }

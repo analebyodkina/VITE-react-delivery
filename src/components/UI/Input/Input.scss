@@ -1,0 +1,25 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.input {
+    background: $btn-bg;
+    border-radius: 12rem;
+    padding: 10rem 12rem;
+    @include text ($ff, 14rem, 20rem, 400, $color-titles);
+    display: flex;
+    align-items: center;
+    input {
+        border: 0;
+        outline: 0;
+        background: transparent;
+        padding-right: 10rem;
+        &:placeholder-shown {        
+            @include text ($ff, 14rem, 20rem, 400, $color-grey-light);
+            letter-spacing: 0.1px;
+        }
+    }
+    span {
+        max-width: 16rem;
+        max-height: 16rem;
+    }
+}

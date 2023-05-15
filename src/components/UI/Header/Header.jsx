@@ -9,7 +9,8 @@ import style from "./Header.module.scss"
 
 const Header = () => {
     return ( 
-        <header className={style.header}>
+        <div className="container">
+            <header className={style.header}>
             <div className={style.header__logo}>
             <img src={Logo} alt="food delivery" />
             </div>
@@ -21,8 +22,8 @@ const Header = () => {
                     <li className={style.header__li}>
                         <Link to={'/'}>Restaurants</Link>
                     </li>
-                    <li><Link to={'/'}>Deals</Link></li>
-                    <li><Link to={'/'}>My orders</Link></li>
+                    <li className={style.header__li}><Link to={'/'}>Deals</Link></li>
+                    <li className={style.header__li}><Link to={'/'}>My orders</Link></li>
                 </ul>
             </nav>
             <div className={style.header__btn}>
@@ -41,7 +42,10 @@ const Header = () => {
 
        
        
-        </header>
+            </header>
+
+        </div>
+        
     )
 }
 
