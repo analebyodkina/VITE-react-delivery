@@ -1,11 +1,11 @@
 @import '../../Scss/vars';
 @import '../../Scss/mixins';
 
-.SiteSections {    
+.siteSections {    
     margin-bottom: 40rem;
     &__row {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, 158rem);
         gap: 30rem;        
     }   
 }
