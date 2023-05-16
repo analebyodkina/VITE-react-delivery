@@ -5,14 +5,14 @@ import Sushi from "/src/assets/icons/sushi.svg";
 import Broccoli from "/src/assets/icons/broccoli.svg";
 import Dessert from "/src/assets/icons/cake.svg";
 
-import SiteSection from "../../views/components/SiteSection/SiteSection";
-import "./SiteSections.scss";
+import SiteSection from "../SiteSection/SiteSection";
+import "./Sections.scss";
 
-const SiteSections = () => {
+const Sections = () => {
     return ( 
         <div className="siteSections container">
             <div className="siteSections__row"> 
-            <SiteSection image={Pizza} alt="pizza icon" title="Pizza"/> 
+                <SiteSection image={Pizza} alt="pizza icon" title="Pizza"/> 
                 <SiteSection image={Hamburger} alt="burger icon" title="Burger"/> 
                 <SiteSection image={Meat} alt="meat icon" title="BBQ"/> 
                 <SiteSection image={Sushi} alt="sushi icon" title="Sushi"/> 
@@ -27,4 +27,4 @@ const SiteSections = () => {
     )
   }
   
-  export default SiteSections
+  export default Sections

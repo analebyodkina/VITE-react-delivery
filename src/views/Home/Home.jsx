@@ -1,11 +1,11 @@
 import Sales from "../../components/Sales/Sales"
-import SiteSections from "../../components/SiteSections/SiteSections"
+import Sections from "../../components/Sections/Sections"
 
 const Home = () => {
   return ( 
       <>
         <Sales />
-        <SiteSections />
+        <Sections />
         
       </>
   )

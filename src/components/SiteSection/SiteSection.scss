@@ -1,5 +1,5 @@
-@import '../../../Scss/vars';
-@import '../../../Scss/mixins';
+@import '../../Scss/vars';
+@import '../../Scss/mixins';
 
 
 .SiteSection__item {
@@ -11,6 +11,16 @@
     align-items: center;
     padding: 13rem 16rem;
     gap: 12rem;
+    transition: $transition;
+    &:hover {
+        border: 1rem solid #697BFF;
+        background: #F8F9FF;
+    }
+    &:active {
+        background: $bg-blue;
+        border: 2rem solid $color-primary;
+
+    }
 }
 .SiteSection__image {
     max-width: 24rem;

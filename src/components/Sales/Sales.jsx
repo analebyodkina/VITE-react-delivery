@@ -1,7 +1,7 @@
 import Cake from "/src/assets/cake.png";
 import Burger from "/src/assets/burger.png";
-import SalesItem from "../../views/components/SalesItem/SalesItem"
-import "./sales.scss";
+import SalesItem from "../SalesItem/SalesItem"
+import "./Sales.scss";
 
 const Sales = () => {
     return ( 
