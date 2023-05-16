@@ -4,23 +4,23 @@ import "./SalesItem.scss";
 
 
 
-const SalesItem = () => {
+const SalesItem = (props) => {
   return ( 
       <>
         <div className="sales__card card">
             <div className="card__image">
-                <img src={Cake} alt="cupcake" />
+                <img src={props.img} alt="cupcake" />
             </div>
             <div className="card__info">
-                <div className="title card__title">All deserts</div>
-                <div className="card__discount">20% OFF</div>
-                <div className="card__subtitle">Deserty</div>
+                <div className="title card__title">{props.title}</div>
+                <div className="card__discount">{props.discount}</div>
+                <div className="card__subtitle">{props.subtitle}</div>
             </div>
                         
         </div>
 
 
-        <div className="sales__card card">
+        {/* <div className="sales__card card">
             <div className="card__image">
                 <img src={Burger} alt="burger" />
             </div>
@@ -30,7 +30,7 @@ const SalesItem = () => {
                 <div className="card__subtitle">Fooddies</div>
             </div>
             
-        </div> 
+        </div>  */}
         
       </>
   )
