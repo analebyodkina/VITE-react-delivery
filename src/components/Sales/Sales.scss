@@ -8,48 +8,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30rem;
-    }
-
-    &__item {
-        border-radius: $radius;
-        background: $bg-blue;        
-        display: flex;
-        gap: 16rem;        
-        &:nth-child(even) {
-            background: #FFF3ED;
-            .card__discount {
-                color: #FD6D22;
-            }
+        @include tablet-992 {
+            grid-template-columns: repeat(auto-fit, 540rem);
+            justify-content: center;
         }
-        
-    }
-}
-.container {
-}
-.card {
-    &__image {
-        max-width: 290rem;
-        
-               
-    }
-    &__info {
-        display: flex;
-        flex-direction: column;
-        padding: 24rem 24rem 16rem 0;
-    }
-    &__title{        
-        margin-bottom: 8rem;
-    }
-
-    &__discount{
-        flex-grow: 1;
-        @include text ($ff, 40rem, 56rem, 800, $color-primary);
-        letter-spacing: 0.1px;
-        margin-bottom: 36rem;        
-    }
-
-    &__subtitle {
-        @include text ($ff, 14rem, 20rem, 400, $color-grey-light);
-        letter-spacing: 0.1px;        
-    }
+    }   
 }
