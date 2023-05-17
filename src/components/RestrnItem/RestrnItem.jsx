@@ -1,9 +1,10 @@
 import BoxIcon from "../icons/BoxIcon";
+import ClockIcon from "../icons/ClockIcon";
 import "./RestrnItem.scss";
-import Sushi from "/src/assets/icons/sushi.svg";
+
 import restaur from "/src/assets/restaurant-1.png";
 
-const RestrnItem = () => {
+const RestrnItem = (props) => {
   return ( 
     <>
         <div className="restrnItem">
@@ -12,20 +13,21 @@ const RestrnItem = () => {
             </div> 
             <div className="restrnItem__info">
                 <div className="restrnItem__header">
-                    <div className="restrnItem__title">Royal Sushi House</div>
+                    <div className="restrnItem__title">{props.title}</div>
                     <div className="restrnItem__busket">
                         <BoxIcon />
                     </div>
                 </div> 
                 <div className="restrnItem__desc">
-                    <p className="restrnItem__time">30-40 min</p>
-                    <p className="restrnItem__price">$32 min sum</p>
+                    <div className="restrnItem__icon"><ClockIcon /></div>
+                    <p className="restrnItem__time">{props.time}</p>
+                    <p className="restrnItem__price">{props.price}</p>
                 </div>
                 <a href="/" className="restrnItem__section category">                
                     <div className="category__image">
-                        <img src={Sushi} alt="sushi icon" />
+                        <img src={props.icon} alt={props.alt} />
                     </div>            
-                    <div className="category__title">Suchi</div>                        
+                    <div className="category__title">{props.name}</div>                        
                 </a> 
             </div>          
           
