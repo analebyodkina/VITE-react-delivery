@@ -1,0 +1,14 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.settings {
+    &__title {
+        margin-bottom: 16rem;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12rem;
+    }
+}
+

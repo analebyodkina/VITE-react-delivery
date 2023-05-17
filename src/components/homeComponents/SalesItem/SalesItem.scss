@@ -16,7 +16,7 @@
     @include mobile-576 {
         flex-direction: column-reverse;
         align-items: center;
-        gap: 0;
+        gap: 56rem;
     }   
     &__image {
         flex-shrink: 0;
@@ -25,7 +25,7 @@
         max-height: 188rem;
         overflow: hidden;
         @include mobile-576 {
-            align-self: inherit;
+            align-self: center;
         }     
     }
     &__info {
@@ -35,6 +35,9 @@
         @include mobile-576 {
             padding: 16rem 16rem 0 16rem;
             flex-direction: row;
+            @include flex-between;
+            width: 100%;
+            position: relative;
         } 
     }
     &__title{        
@@ -48,6 +51,8 @@
         margin-bottom: 36rem;
         @include mobile-576 {
             margin-bottom: 0;
+            position: absolute;
+            top: 45rem;
         }        
     }
 

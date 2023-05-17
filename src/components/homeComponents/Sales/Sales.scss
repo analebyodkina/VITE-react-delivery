@@ -13,7 +13,7 @@
             grid-template-columns: minmax(480rem, 535rem);
         } 
         @include mobile-576 {
-            grid-template-columns: auto;
+            grid-template-columns: 330rem;
         }  
     }
 }

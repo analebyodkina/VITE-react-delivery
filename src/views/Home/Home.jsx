@@ -1,6 +1,6 @@
-import Restaurants from "../../components/Restaurants/Restaurants"
+import Restaurants from "../../components/homeComponents/Restaurants/Restaurants"
 import Sales from "../../components/Sales/Sales"
-import Sections from "../../components/Sections/Sections"
+import Sections from "../../components/homeComponents/Sections/Sections"
 
 const Home = () => {
   return ( 
