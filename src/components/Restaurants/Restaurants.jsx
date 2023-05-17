@@ -1,9 +1,8 @@
-import Pizza from "/src/assets/icons/pizza.svg";
-import Hamburger from "/src/assets/icons/burger.svg";
-import Meat from "/src/assets/icons/meat.svg";
-import Sushi from "/src/assets/icons/sushi.svg";
-import Broccoli from "/src/assets/icons/broccoli.svg";
-// import Dessert from "/src/assets/icons/cake.svg";
+
+
+import rest1 from "/src/assets/restaurant-1.png";
+import rest2 from "/src/assets/restaurant-2.png";
+import rest3 from "/src/assets/restaurant-3.png";
 
 
 import "./Restaurants.scss";
@@ -14,16 +13,12 @@ const Restaurants = () => {
         <div className="restaurants container">
             <div className="title restaurants__title">Nearby restaurants</div>
             <div className="restaurants__row"> 
-                <RestrnItem title="Royal Sushi House" time="30-40 min" price="$32 min sum" alt="sushi icon" icon={Sushi} name="Sushi"/>  
-                <RestrnItem title="Burgers & Pizza" time="40-60 min" price="$24 min sum" alt="burger icon" icon={Hamburger} name="Burger"/>  
-                <RestrnItem title="Ninja sushi" time="20-40 min" price="$40 min sum" alt="sushi icon" icon={Sushi} name="Sushi"/>  
-                <RestrnItem title="Ninja sushi" time="20-40 min" price="$40 min sum" alt="sushi icon" icon={Sushi} name="Sushi"/>  
-                <RestrnItem title="Ninja sushi" time="20-40 min" price="$40 min sum" alt="sushi icon" icon={Pizza} name="Sushi"/>  
-                <RestrnItem title="Ninja sushi" time="20-40 min" price="$40 min sum" alt="sushi icon" icon={Meat} name="Sushi"/>  
-                <RestrnItem title="Ninja sushi" time="20-40 min" price="$40 min sum" alt="sushi icon" icon={Broccoli} name="Sushi"/>                         
-                    
-
-                            
+                <RestrnItem title="Royal Sushi House" bg={rest1} time="30-40 min" price="$32 min sum" />  
+                <RestrnItem title="Burgers & Pizza" bg={rest2} time="40-60 min" price="$24 min sum" />  
+                <RestrnItem title="Ninja sushi"  bg={rest3} time="20-40 min" price="$40 min sum" />  
+                <RestrnItem title="Ninja sushi" bg={rest3} time="20-40 min" price="$40 min sum" />  
+                <RestrnItem title="Ninja sushi" bg={rest3} time="20-40 min" price="$40 min sum" />  
+                
                 
             </div>
         </div>

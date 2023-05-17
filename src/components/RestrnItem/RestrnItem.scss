@@ -68,21 +68,3 @@
         }
 	}
 }
-.category {
-    background: $btn-bg;
-    border-radius: 100rem;
-    padding: 4rem 10rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 8rem;        
-    &__title {
-        @include text ($ff, 12rem, 16rem, 600, $color-grey);
-    }
-    &__image {
-        max-width: 12rem;
-        }
-}
-
-
-    
-

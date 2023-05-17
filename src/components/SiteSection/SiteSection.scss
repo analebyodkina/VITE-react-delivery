@@ -18,8 +18,7 @@
     }
     &:active {
         background: $bg-blue;
-        border: 2rem solid $color-primary;
-
+        outline: 1rem solid $color-primary;
     }
 }
 .SiteSection__image {

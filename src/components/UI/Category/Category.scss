@@ -1,0 +1,25 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.category {
+    background: $btn-bg;
+    border-radius: 100rem;
+    padding: 4rem 10rem;
+    display: inline-flex;
+    align-items: center;
+    border: 1rem solid transparent;
+    gap: 8rem;
+    transition: $transition;
+    &:hover {
+        border: 1rem solid $color-primary;
+    } 
+    &:active {
+        background: darken($btn-bg, 10%);        
+    }       
+    &__title {
+        @include text ($ff, 12rem, 16rem, 600, $color-grey);
+    }
+    &__image {
+        max-width: 12rem;
+    }
+}
