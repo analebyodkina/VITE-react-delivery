@@ -1,0 +1,60 @@
+@import '../../Scss/vars';
+@import '../../Scss/mixins';
+
+.restrnItem {
+    border: 1px solid $btn-bg;
+    border-radius: $radius;    
+    &__image  {
+        border-radius: $radius $radius 0 0;
+        overflow: hidden;        
+        img {
+            border-radius: $radius $radius 0 0;
+            transition: $transition;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__info {
+        padding: 16rem;
+    }
+    &__header {
+        @include flex-between;
+        margin-bottom: 6rem;        
+    }
+
+    &__title {
+        @include text ($ff, 18rem, 24rem, 700, $color-titles);
+        letter-spacing: 0.1px;
+    }
+
+    &__busket {
+        max-width: 16rem;
+        svg {
+            width: 15rem;
+            height: 16.6rem;
+            path {
+                stroke: #C7C8D2;
+            }
+            
+        }
+    }
+
+}
+.category {
+        background: $btn-bg;
+        border-radius: 100rem;
+        padding: 4rem 10rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8rem;        
+        &__title {
+            @include text ($ff, 12rem, 16rem, 600, $color-grey);
+        }
+        &__image {
+            max-width: 12rem;
+        }
+    }
+
+    
+

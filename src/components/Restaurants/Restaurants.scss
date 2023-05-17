@@ -1,0 +1,14 @@
+@import '../../Scss/vars';
+@import '../../Scss/mixins';
+
+.restaurants {    
+    padding-bottom: 40rem;
+    &__title {
+        margin-bottom: 16rem;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 346rem);
+        gap: 30rem;        
+    }   
+}

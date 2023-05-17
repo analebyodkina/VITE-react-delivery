@@ -1,3 +1,4 @@
+import Restaurants from "../../components/Restaurants/Restaurants"
 import Sales from "../../components/Sales/Sales"
 import Sections from "../../components/Sections/Sections"
 
@@ -6,6 +7,7 @@ const Home = () => {
       <>
         <Sales />
         <Sections />
+        <Restaurants />
         
       </>
   )
