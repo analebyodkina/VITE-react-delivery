@@ -3,10 +3,15 @@
 
 .restrnItem {
     border: 1px solid $btn-bg;
-    border-radius: $radius;    
+    border-radius: $radius;
+    cursor: pointer; 
+    transition: $transition;   
+    &:hover {
+        border: 1px solid $color-primary;
+    }
     &__image  {
         border-radius: $radius $radius 0 0;
-        overflow: hidden;        
+        overflow: hidden;             
         img {
             border-radius: $radius $radius 0 0;
             transition: $transition;
@@ -37,7 +42,6 @@
             
         }
     }
-
 	&__desc {
         @include text ($ff, 12rem, 16rem, 600, $color-grey-light);
         display: flex; 
@@ -49,8 +53,7 @@
         max-width: 10rem;
         max-height: 10rem;
         margin-right: -3rem;
-    }           
-    
+    }
 	&__price {
         position: relative;
         margin-left: 8rem;

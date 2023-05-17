@@ -6,11 +6,14 @@
     margin-bottom: 32rem;
     &__row {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        justify-content: center;        
+        grid-template-columns: repeat(2, minmax(480rem, 535rem));
         gap: 30rem;
-        @include tablet-992 {
-            grid-template-columns: repeat(auto-fit, 540rem);
-            justify-content: center;
-        }
-    }   
+        @media screen and (max-width: 1050px){
+            grid-template-columns: minmax(480rem, 535rem);
+        } 
+        @include mobile-576 {
+            grid-template-columns: auto;
+        }  
+    }
 }

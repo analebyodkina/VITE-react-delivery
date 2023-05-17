@@ -6,12 +6,11 @@
     &__row {
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(100rem, 158rem));
+        grid-template-columns: repeat(6, 1fr);
         gap: 30rem;
-        @include mobile-576 {
-            grid-template-columns: repeat(3, 100rem);
+        @include tablet-small-768 {
+            grid-template-columns: repeat(3, minmax(100rem, 1fr));
             gap: 15rem;
-
         }        
     }   
 }

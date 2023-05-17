@@ -9,7 +9,13 @@
     &__row {
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300rem, 346rem));
-        gap: 30rem;        
+        grid-template-columns: repeat(3, minmax(300rem, 346rem));
+        gap: 30rem; 
+        @include tablet-992 {
+            grid-template-columns: repeat(2, minmax(270rem, 350rem));  
+        } 
+        @include mobile-576 {
+            grid-template-columns: minmax(270rem, 350rem);  
+        }       
     }   
 }

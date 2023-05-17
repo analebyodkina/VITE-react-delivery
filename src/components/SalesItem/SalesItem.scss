@@ -12,24 +12,30 @@
         .card__discount {
             color: #FD6D22;
         }
-    }    
+    } 
+    @include mobile-576 {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+    }   
     &__image {
         flex-shrink: 0;
-        align-self: flex-end;
-        
+        align-self: flex-end;        
         width: 290rem;
         max-height: 188rem;
         overflow: hidden;
-        // img {
-        //     transform: scale(1.1);
-        // }
-
-               
+        @include mobile-576 {
+            align-self: inherit;
+        }     
     }
     &__info {
         display: flex;
         flex-direction: column;
         padding: 24rem 24rem 16rem 0;
+        @include mobile-576 {
+            padding: 16rem 16rem 0 16rem;
+            flex-direction: row;
+        } 
     }
     &__title{        
         margin-bottom: 8rem;
@@ -39,7 +45,10 @@
         flex-grow: 1;
         @include text ($ff, 40rem, 56rem, 800, $color-primary);
         letter-spacing: 0.1px;
-        margin-bottom: 36rem;        
+        margin-bottom: 36rem;
+        @include mobile-576 {
+            margin-bottom: 0;
+        }        
     }
 
     &__subtitle {

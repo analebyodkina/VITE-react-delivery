@@ -1,7 +1,8 @@
 @import '../../../Scss/vars';
 @import '../../../Scss/mixins';
 
-.header {    
+.header { 
+    display: none;   
     padding: 15rem 0;
     border-bottom: 1px solid $btn-bg;
     &__container { 
