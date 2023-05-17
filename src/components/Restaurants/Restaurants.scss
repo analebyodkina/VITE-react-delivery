@@ -7,8 +7,9 @@
         margin-bottom: 16rem;
     }
     &__row {
+        justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 346rem);
+        grid-template-columns: repeat(auto-fill, minmax(300rem, 346rem));
         gap: 30rem;        
     }   
 }

@@ -4,8 +4,14 @@
 .siteSections {    
     margin-bottom: 40rem;
     &__row {
+        justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fill, 158rem);
-        gap: 30rem;        
+        grid-template-columns: repeat(auto-fill, minmax(100rem, 158rem));
+        gap: 30rem;
+        @include mobile-576 {
+            grid-template-columns: repeat(3, 100rem);
+            gap: 15rem;
+
+        }        
     }   
 }
