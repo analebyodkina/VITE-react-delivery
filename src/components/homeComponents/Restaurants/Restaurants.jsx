@@ -6,7 +6,7 @@ import rest3 from "/src/assets/restaurant-3.png";
 
 
 import "./Restaurants.scss";
-import RestrnItem from "../../RestrnItem/RestrnItem";
+import RestrnItem from "../RestrnItem/RestrnItem";
 
 const Restaurants = () => {
     return ( 

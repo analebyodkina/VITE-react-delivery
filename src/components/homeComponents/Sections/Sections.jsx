@@ -5,7 +5,7 @@ import Sushi from "/src/assets/icons/sushi.svg";
 import Broccoli from "/src/assets/icons/broccoli.svg";
 import Dessert from "/src/assets/icons/cake.svg";
 
-import SiteSection from "../../SiteSection/SiteSection";
+import SiteSection from "../SiteSection/SiteSection";
 import "./Sections.scss";
 
 const Sections = () => {

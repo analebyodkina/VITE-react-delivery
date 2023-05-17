@@ -1,9 +1,9 @@
-import Category from "../UI/Category/Category";
-import BoxIcon from "../icons/BoxIcon";
-import ClockIcon from "../icons/ClockIcon";
+import Category from "../../UI/Category/Category";
+import BoxIcon from "../../icons/BoxIcon";
+import ClockIcon from "../../icons/ClockIcon";
 import "./RestrnItem.scss";
 
-import Pizza from "/src/assets/icons/pizza.svg";
+// import Pizza from "/src/assets/icons/pizza.svg";
 // import Hamburger from "/src/assets/icons/burger.svg";
 // import Meat from "/src/assets/icons/meat.svg";
 import Sushi from "/src/assets/icons/sushi.svg";
