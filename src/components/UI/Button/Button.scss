@@ -2,7 +2,7 @@
 @import '../../../Scss/mixins';
 
 .btn {
-    @include text ($ff, 14rem, 20rem, 700, $color-grey-light);        
+    @include text ($ff, 14rem, 20rem, 700, $color-primary);        
     letter-spacing: 0.3px;
     padding: 12rem 16rem;
     border: 1rem solid $color-primary;
@@ -11,12 +11,21 @@
     background: transparent;
     transition: $transition;
     @include press;
-    &._grey {
+    cursor: pointer;
+    &.grey {
         color: $color-grey-light;
-        background: 1rem solid $color-grey-light;
+        border: 1rem solid $color-grey-light;
     }
-    &._red {
+    &.greyNoBorder {
+        color: $color-grey-light;
+        border: 1rem solid transparent;
+    }
+    &.red {
         color: $btn-red;
-        background: 1rem solid $btn-red;
+        border: 1rem solid $btn-red;
+    }
+    &.blue {
+        background: $color-primary;
+        color: $color-white;
     }
 }

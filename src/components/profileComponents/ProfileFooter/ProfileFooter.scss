@@ -1,0 +1,16 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.footer {
+    display: flex;
+    gap: 16rem;
+    .btn {
+        &:nth-child(2){
+            margin-left: auto;
+        }
+
+    }
+    
+}
+
+

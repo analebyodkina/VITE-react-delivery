@@ -1,6 +1,7 @@
 import Avatar from "../Avatar/Avatar";
 import Notifications from "../Notifications/Notifications";
 import ProfileFields from "../ProfileFields/ProfileFields";
+import ProfileFooter from "../ProfileFooter/ProfileFooter";
 import "./Account.scss";
 
 const Account = (props) => {
@@ -12,6 +13,7 @@ const Account = (props) => {
             <Avatar />
             <ProfileFields />
             <Notifications />
+            <ProfileFooter />
             
 
         </div>
