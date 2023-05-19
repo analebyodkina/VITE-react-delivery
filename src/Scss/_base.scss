@@ -61,7 +61,7 @@ button {
         
     // }
 }
-h4 {
+.heading {
     @include text($ff, 12rem, 16rem, 600, $color-grey); 
 }
 

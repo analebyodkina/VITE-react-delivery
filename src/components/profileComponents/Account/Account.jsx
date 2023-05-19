@@ -1,4 +1,5 @@
 import Avatar from "../Avatar/Avatar";
+import ProfileFields from "../ProfileFields/ProfileFields";
 import "./Account.scss";
 
 const Account = (props) => {
@@ -8,6 +9,9 @@ const Account = (props) => {
         <div className="account__field">
             <div className="account__subtitle">{props.subtitle}</div>
             <Avatar />
+            <ProfileFields />
+            
+
         </div>
         
      </div>

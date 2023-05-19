@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import BoxIcon from "../../icons/BoxIcon";
 import Avatar from "/src/assets/avatar.png";
 import Logo from "/src/assets/logo.svg";
-import Input from "../Input/Input";
+import SearchInput from "../SearchInput/SearchInput";
 
 import style from "./Header.module.scss"
 
@@ -15,7 +15,7 @@ const Header = () => {
                     <img src={Logo} alt="food delivery" />
                 </Link>
                 <div className={style.header__serch}>
-                    <Input />
+                    <SearchInput />
                 </div>
                 <nav className={style.header__nav}>
                     <ul className={style.header__ul}>

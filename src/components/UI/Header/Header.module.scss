@@ -39,8 +39,12 @@
         max-width: 50rem;
         padding: 1rem;
         border-radius: $radius;
-        border: 2px solid $btn-bg;
-        margin-left: 16rem;        
+        border: 2rem solid $btn-bg;
+        margin-left: 16rem;
+        border-radius: $radius; 
+        img {
+            border-radius: $radius; 
+        }       
     }
 } 
 .headerBusket {

@@ -1,0 +1,26 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    &__field {
+        border: 1rem solid $input-border;
+        outline: 0;
+        border-radius: 8rem;
+        background: transparent;
+        padding: 12rem;
+        transition: $transition;
+        @include text ($ff, 14rem, 20rem, 400, $color-titles);        
+        letter-spacing: 0.1px;
+        &::placeholder {
+            @include text ($ff, 14rem, 20rem, 400, $color-titles); 
+        }
+        &:focus {
+            border: 1rem solid $color-primary;
+            outline: 1rem solid $color-primary;
+            background: $bg-blue;
+        }
+    }    
+}

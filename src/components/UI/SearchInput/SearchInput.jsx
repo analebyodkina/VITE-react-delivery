@@ -1,13 +1,13 @@
 import SearchIcon from "../../icons/Searchicon"
-import "./Input.scss";
+import "./SearchInput.scss";
 
-const Input = () => {
+const SearchInput = () => {
     return ( 
-       <label className="input">
+       <label className="SearchInput">
         <input type="search" placeholder="Search" />
             <span><SearchIcon /></span> 
        </label>
     )
   }
   
-  export default Input
+  export default SearchInput

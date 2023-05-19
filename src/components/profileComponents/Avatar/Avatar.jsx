@@ -5,7 +5,7 @@ import "./Avatar.scss";
 const Avatar = () => {
   return ( 
     <div className="avatar">
-        <h4 className="avatar__title">Avatar</h4>
+        <h4 className="heading avatar__title">Avatar</h4>
         <div className="avatar__row">
             <div className="avatar__image">
                 <img src={AvatarImg} alt="avatar" />
