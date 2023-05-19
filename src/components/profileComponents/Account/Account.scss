@@ -1,0 +1,18 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.account {
+    margin-bottom: 24rem;
+    &__title {
+        margin-bottom: 16rem;
+    }
+    &__field {
+        border: 1rem solid $btn-bg;
+        border-radius: 16rem;        
+        padding: 24rem 16rem;
+    }
+    &__subtitle {
+        @include text ($ff, 18rem, 24rem, 700, $color-titles);        
+        letter-spacing: 0.1px;
+    }
+}

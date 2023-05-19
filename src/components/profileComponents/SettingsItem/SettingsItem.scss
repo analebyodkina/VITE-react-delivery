@@ -43,3 +43,13 @@
         letter-spacing: 0.2px;
     }
 }
+._active {
+    border: 1px solid $color-primary;
+    outline: 1px solid $color-primary;
+    background: $bg-blue;
+    .block__icon svg {
+        path {
+            stroke: $color-white;
+        }
+    }
+}
