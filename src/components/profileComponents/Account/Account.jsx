@@ -1,4 +1,5 @@
 import Avatar from "../Avatar/Avatar";
+import Notifications from "../Notifications/Notifications";
 import ProfileFields from "../ProfileFields/ProfileFields";
 import "./Account.scss";
 
@@ -10,6 +11,7 @@ const Account = (props) => {
             <div className="account__subtitle">{props.subtitle}</div>
             <Avatar />
             <ProfileFields />
+            <Notifications />
             
 
         </div>

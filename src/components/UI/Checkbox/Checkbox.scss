@@ -1,0 +1,25 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    &__text {
+        @include text ($ff, 14rem, 20rem, 400, $color-titles);
+        letter-spacing: 0.1px;
+    }
+
+    &__input {
+    }
+
+    &__mark {
+        width: 20rem;
+        height: 20rem;
+        background: $color-primary;
+        border-radius: 4rem;
+        display: block;
+        transition: $transition;
+    }
+}
+

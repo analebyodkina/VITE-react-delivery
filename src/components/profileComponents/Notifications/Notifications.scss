@@ -1,0 +1,17 @@
+@import '../../../Scss/vars';
+@import '../../../Scss/mixins';
+
+.notifications {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16rem;
+        row-gap: 24rem;
+        margin-bottom: 36rem; 
+    }    
+    &__title {
+        margin-bottom: 16rem;
+    }
+}
+
+
