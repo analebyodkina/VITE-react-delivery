@@ -2,24 +2,38 @@
 @import '../../../Scss/mixins';
 
 .checkbox {
-    display: flex;
+    display: flex;    
     align-items: center;
     gap: 12rem;
     &__text {
         @include text ($ff, 14rem, 20rem, 400, $color-titles);
         letter-spacing: 0.1px;
-    }
-
-    &__input {
-    }
-
+        order: 2;
+    }  
     &__mark {
+        order: 1;
         width: 20rem;
         height: 20rem;
-        background: $color-primary;
+        border: 1rem solid $input-border;
+        outline: 0;        
+        background: transparent;        
         border-radius: 4rem;
-        display: block;
+        @include flex-center;
         transition: $transition;
+        cursor: pointer;
+        svg {
+            transition: $transition;
+            opacity: 0;
+        } 
+    }
+    &__input { 
+        display: none;
+        &:checked ~ .checkbox__mark  {
+            background: $color-primary;
+            border: 1rem solid $color-primary
+        }       
+        &:checked ~ .checkbox__mark svg {
+            opacity: 1;
+        }
     }
 }
-

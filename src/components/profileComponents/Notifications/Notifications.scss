@@ -5,6 +5,7 @@
     &__row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        justify-content: start;
         column-gap: 16rem;
         row-gap: 24rem;
         margin-bottom: 36rem; 
