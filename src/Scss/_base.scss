@@ -24,9 +24,7 @@ html {
     width: 100%;
     padding: 0 15px;
     margin-inline: auto;
-    @include mobile-576 {
-        padding: 0 24px;        
-    }
+    
 }
 body {
     font-family: $ff;     
@@ -55,11 +53,7 @@ button {
   }
 .title {
     @include text ($ff, 20rem, 28rem, 600, $color-titles);
-    letter-spacing: 0.1px;
-    // @include mobile-576 { 
-    //     @include text($ff, 2.8rem, 3.8rem, 700, $color-text);        
-        
-    // }
+    letter-spacing: 0.1px;    
 }
 .heading {
     @include text($ff, 12rem, 16rem, 600, $color-grey); 

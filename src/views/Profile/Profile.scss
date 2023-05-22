@@ -1,7 +1,16 @@
+@import '../../Scss/vars';
+@import '../../Scss/mixins';
 .profile {
     display: grid;
     gap: 30rem;
     grid-template-columns: minmax(200rem, 350rem) 1fr;
     margin-top: 24rem;
     height: 100%;
+    @include tablet-992 {
+        grid-template-columns: auto 1fr;
+    }
+    @include tablet-small-768{
+        grid-template-columns: minmax(330rem, 1fr);
+    }
+
 }
