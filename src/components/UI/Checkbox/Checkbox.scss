@@ -5,6 +5,7 @@
     display: flex;    
     align-items: center;
     gap: 12rem;
+    cursor: pointer;
     &__text {
         @include text ($ff, 14rem, 20rem, 400, $color-titles);
         letter-spacing: 0.1px;

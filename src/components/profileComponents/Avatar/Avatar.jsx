@@ -14,11 +14,10 @@ const Avatar = () => {
     {
         id:21,
         text:"Remove",
-        color:"greyNoBorder"
-                    
+        color:"greyNoBorder"                    
     },
-
 ])
+
   return ( 
     <div className="avatar">
         <h4 className="heading avatar__title">Avatar</h4>
