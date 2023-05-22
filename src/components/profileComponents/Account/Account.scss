@@ -10,6 +10,7 @@
         border: 1rem solid $btn-bg;
         border-radius: 16rem;        
         padding: 24rem 16rem;
+        overflow-x: hidden
     }
     &__subtitle {
         @include text ($ff, 18rem, 24rem, 700, $color-titles);        
