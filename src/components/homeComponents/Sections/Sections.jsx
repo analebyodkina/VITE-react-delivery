@@ -5,9 +5,10 @@ import Sushi from "/src/assets/icons/sushi.svg";
 import Broccoli from "/src/assets/icons/broccoli.svg";
 import Dessert from "/src/assets/icons/cake.svg";
 
+import { useState } from "react";
 import SiteSection from "../SiteSection/SiteSection";
 import "./Sections.scss";
-import { useState } from "react";
+
 
 const Sections = () => {
     const [items, setItem] = useState ([
