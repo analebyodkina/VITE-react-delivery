@@ -9,10 +9,11 @@
         column-gap: 16rem;
         row-gap: 24rem;
         margin-bottom: 36rem; 
+        @include mobile-576 {
+            grid-template-columns: 1fr;
+        }
     }    
     &__title {
         margin-bottom: 16rem;
     }
 }
-
-

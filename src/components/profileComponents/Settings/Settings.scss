@@ -9,6 +9,9 @@
         display: flex;
         flex-direction: column;
         gap: 12rem;
+        @include tablet-small-768 {
+            gap: 16rem;
+        }
     }
 }
 

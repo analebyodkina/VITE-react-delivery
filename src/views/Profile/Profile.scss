@@ -11,6 +11,7 @@
     }
     @include tablet-small-768{
         grid-template-columns: minmax(330rem, 1fr);
+        gap: 48rem;
     }
 
 }
