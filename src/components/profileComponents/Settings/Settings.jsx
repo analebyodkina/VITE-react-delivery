@@ -2,9 +2,9 @@ import CardIcon from "../../icons/CardIcon";
 import PointIcon from "../../icons/PointIcon";
 import ShieldIcon from "../../icons/Shieldicon";
 import UserIcon from "../../icons/UserIcon";
-import SettingsItem from "../SettingsItem/SettingsItem";
+
 import "./Settings.scss";
-import { useState } from "react";
+
 
 const Settings = () => {  
  

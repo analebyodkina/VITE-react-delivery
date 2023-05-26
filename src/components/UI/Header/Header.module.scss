@@ -92,8 +92,20 @@
         }
     }    
 } 
+._header__ul.active {        
+    transform: translateX(0%);
+}
+._header__ul_73gc4_22.active {        
+    transform: translateX(0%);
+}
 .header__ul.active {        
-    transform: translateX(0);
+    transform: translateX(0%);
+}
+.header__ul  {
+    &.active{
+        transform: translateX(0%);
+    }        
+    
 }
 .headerBusket {
     max-width: 48rem;

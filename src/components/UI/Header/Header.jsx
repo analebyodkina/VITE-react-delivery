@@ -3,7 +3,7 @@ import BoxIcon from "../../icons/BoxIcon";
 import Avatar from "/src/assets/avatar.png";
 import Logo from "/src/assets/logo.svg";
 import SearchInput from "../SearchInput/SearchInput";
-import { useState } from 'react';
+
 
 import style from "./Header.module.scss"
 
