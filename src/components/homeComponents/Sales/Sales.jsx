@@ -23,8 +23,6 @@ const Sales = () => {
             img:"/src/assets/burger.png"             
         },
 
-
-
     ])
     return ( 
         <div className="sales container">

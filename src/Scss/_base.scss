@@ -58,4 +58,14 @@ button {
 .heading {
     @include text($ff, 12rem, 16rem, 600, $color-grey); 
 }
+*::-webkit-scrollbar {
+    width: 10rem;
+    height: 10rem;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 16rem;
+    height: 10px;
+    width: 8rem;
+    background-color: rgba($color-primary, $alpha: 0.9);    
+}
 

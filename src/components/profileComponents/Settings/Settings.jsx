@@ -12,15 +12,13 @@ const Settings = () => {
         id:16,
         title:"Account",
         desc:"Personal information",      
-        icon:<UserIcon />
-                    
+        icon:<UserIcon />                    
     },
     {
         id:17,
         title:"Address",
         desc:"Shippings addresses",
-        icon:<PointIcon />
-                    
+        icon:<PointIcon />                    
     },
     {
       id:18,
@@ -33,7 +31,7 @@ const Settings = () => {
     title:"Security",
     desc:"Password, 2FA",
     icon:<ShieldIcon />          
-},
+  },
 
 ])
   return ( 
