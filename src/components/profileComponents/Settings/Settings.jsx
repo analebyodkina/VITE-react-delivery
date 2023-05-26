@@ -6,50 +6,40 @@ import SettingsItem from "../SettingsItem/SettingsItem";
 import "./Settings.scss";
 import { useState } from "react";
 
-const Settings = () => {
-  const [items, setItem] = useState ([
-    {
-        id:16,
-        title:"Account",
-        desc:"Personal information",      
-        icon:<UserIcon />                    
-    },
-    {
-        id:17,
-        title:"Address",
-        desc:"Shippings addresses",
-        icon:<PointIcon />                    
-    },
-    {
-      id:18,
-      title:"Payment method",
-      desc:"Connected credit cards",
-      icon:<CardIcon />           
-  },
-  {
-    id:19,
-    title:"Security",
-    desc:"Password, 2FA",
-    icon:<ShieldIcon />          
-  },
-
-])
+const Settings = () => {  
+ 
   return ( 
      <div className="settings">
         <div className="title settings__title">Settings</div>
         <div className="settings__list" >
-          {/* <SettingsItem title="Account" desc="Personal information" icon={<UserIcon />}/>
-          <SettingsItem title="Address" desc="Shippings addresses" icon={<PointIcon />}/>
-          <SettingsItem title="Payment method" desc="Connected credit cards" icon={<CardIcon />}/>
-          <SettingsItem title="Security" desc="Password, 2FA" icon={<ShieldIcon />} /> */}
-
-          {items && items.map((item,index) => {
-              return (
-                  <SettingsItem key={index} title={item.title} desc={item.desc} subtitle={item.subtitle} icon={item.icon} />
-              )
-          }
-          )}
-
+          <div className="block settings__block">
+            <div className="block__icon">{<UserIcon />}</div>
+            <div className="block__info">
+                <div className="block__title">Account</div>
+                <div className="block__desc">Personal information</div>
+            </div>
+          </div>
+          <div className="block settings__block">
+            <div className="block__icon">{<PointIcon />}</div>
+            <div className="block__info">
+                <div className="block__title">Address</div>
+                <div className="block__desc">Shippings addresses</div>
+            </div>
+          </div>
+          <div className="block settings__block">
+            <div className="block__icon">{<CardIcon />}</div>
+            <div className="block__info">
+                <div className="block__title">Payment method</div>
+                <div className="block__desc">Connected credit cards</div>
+            </div>
+          </div>
+          <div className="block settings__block">
+            <div className="block__icon">{<ShieldIcon />}</div>
+            <div className="block__info">
+                <div className="block__title">Security</div>
+                <div className="block__desc">Password, 2FA</div>
+            </div>
+          </div>
         </div>
     </div>
   )
