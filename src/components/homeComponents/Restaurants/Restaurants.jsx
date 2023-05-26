@@ -13,14 +13,28 @@ const Restaurants = () => {
             title:"Royal Sushi House",            
             bg:"/src/assets/restaurant-1.png",
             time:"30-40 min",
-            price:"$32 min sum"             
+            price:"$32 min sum",
+
         },
         {
             id:10,
             title:"Burgers & Pizza",            
             bg:"/src/assets/restaurant-2.png",
             time:"40-60 min",
-            price:"$32 min sum"                         
+            price:"$32 min sum",
+            tags: [
+                {
+                    icon: '/src/assets/icons/burger.svg',
+                    title: 'Burger',
+                    alt: 'burger icon'
+                },
+                {
+                    icon: '/src/assets/icons/pizza.svg',
+                    title: 'Pizza',
+                    alt: 'pizza icon'
+                },
+
+            ]                         
         },
         {
             id:11,
