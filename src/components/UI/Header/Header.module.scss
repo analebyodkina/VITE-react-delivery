@@ -98,14 +98,19 @@
 ._header__ul_73gc4_22.active {        
     transform: translateX(0%);
 }
-.header__ul.active {        
+.header__ul_active {        
     transform: translateX(0%);
 }
 .header__ul  {
     &.active{
         transform: translateX(0%);
-    }        
-    
+    }
+}
+#headerUl .active {        
+    transform: translateX(0%);
+}
+.headerUlActive {        
+    transform: translateX(0%);
 }
 .headerBusket {
     max-width: 48rem;

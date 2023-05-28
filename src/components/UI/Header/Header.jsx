@@ -49,12 +49,6 @@ const Header = () => {
                     </span>
                 </div>
             </div>
-                    
-                
-
-        
-
-       
        
         </header>
 
